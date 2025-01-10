@@ -15,10 +15,13 @@ body {
 
 header {
     background: rgb(66, 65, 65);
-    padding: 2rem;
     grid-column: 1 / 4;
 }
 
+h1 {
+    padding: 2rem;
+    font-size: large;
+}
 
 main {
     background: grey;
@@ -48,11 +51,7 @@ p {
 
 
 /* Navigation */
-nav {
-    grid-column: 1 / 4;
-    display: block;
-    
-}
+
 
 .navigation {
     list-style: none;
