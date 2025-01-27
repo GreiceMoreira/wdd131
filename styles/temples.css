@@ -31,6 +31,7 @@ header {
     background-color: var(--pale);
     padding-top: 10px;
 }
+
 main {
     display: block;
     justify-content: center;
