@@ -43,6 +43,7 @@ main {
 
 
 figure {
+    width: 300px;
     margin: 1rem;
     text-align: center;
     font-size: larger;
