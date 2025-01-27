@@ -61,7 +61,7 @@ h2 {
     border-bottom: 1px solid var(--green);
 }
 
-/* Mobile View ***************/
+/* Mobile View */
 #menu {
 	display: block;
 	font-size: 2rem;
@@ -109,7 +109,7 @@ nav {
 
 .navigation a:hover, navigation a:active {
 	color: white;
-	background-color: black;
+	background-color: var(--black);
 }
 
 .show li {
