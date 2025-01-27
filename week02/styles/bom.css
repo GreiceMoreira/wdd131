@@ -68,5 +68,8 @@ li {
 
 	main {
 		width: 320px;
+		display: flex;
+		
 	}
 }
+
