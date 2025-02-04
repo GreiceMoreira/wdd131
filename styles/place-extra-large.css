@@ -6,13 +6,13 @@
 
     .data {
         position: absolute;
-        bottom: 970%;
-        left: 12%;
+        bottom: 570%;
+        left: 2%;
     }
     
     .weather {
         position: absolute;
-        bottom: 950%;
-        right: 12%;
+        bottom: 570%;
+        right: 2%;
     }
 }
