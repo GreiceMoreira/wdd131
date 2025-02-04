@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive images</title>
+    <meta name="description" content="Response Images">
+    <meta name="author" content="Greice Moreira">
+    <!-- CSS styles  -->
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+
+
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/porto_alegre_brazil_temple_large.webp">
+                <source media="(min-width: 550px)" srcset="images/porto_alegre_brazil_temple_medium.webp">
+                <img src="images/porto_alegre_brazil_temple_small.webp" alt="Porto Alegre, Brazil - Temple" width="500" height="250" >
+            </picture>
+        </div>
+    </main>
+</body>
+</html>

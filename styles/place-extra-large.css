@@ -1,0 +1,18 @@
+@media only screen and (min-width: 1200px) {
+    .data, .weather {
+        position: absolute;
+        max-width: 300px;
+    }
+
+    .data {
+        position: absolute;
+        bottom: 970%;
+        left: 12%;
+    }
+    
+    .weather {
+        position: absolute;
+        bottom: 950%;
+        right: 12%;
+    }
+}

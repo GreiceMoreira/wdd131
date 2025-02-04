@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Standarts meta  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1,minimum-scale=1">
+    <title>Cambara do Sul</title>
+    <meta name="description" content="A place that I want to visit">
+    <meta name="author" content="Greice Moreira">
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Poetsen+One&display=swap" rel="stylesheet">
+    <!-- Script CSS  -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="stylesheet" href="styles/place-extra-large.css">
+    <!-- JavaScript  -->
+    <script src="scripts/place.js" defer></script>
+
+</head>
+
+<body onload="onLoad()">
+    <header>
+        <h1>Canyon Cambara do Sul </h1>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-cambara-larger.webp" media="(max-width: 2000px)">
+                <source srcset="images/hero-cambara-large.webp" media="(max-width: 1000px)">
+                <source srcset="images/hero-cambara-medium.webp" media="(max-width: 550px)">
+                <img src="images/hero-cambara-small.webp" alt="Canyon - Cambara do Sul">
+            </picture>
+        </div>
+    </header>
+    <main>
+        <div class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 1,211.51 km²</li>
+                <li><strong>Population:</strong> Approximately 6,400</li>
+                <li><strong>Capital:</strong> Cambará do Sul is not a capital; it belongs to the state of Rio Grande do Sul, whose capital is Porto Alegre.</li>
+                <li><strong>Language:</strong> Portuguese</li>
+                <li><strong>Currency:</strong> Brazilian Real (BRL - R$)</li>
+                <li><strong>Calling Code:</strong> +55 (Brazil), Local Area Code: 54</li>
+                <li><strong>Internet TLD:</strong> .br</li>
+            </ul>
+
+        </div>
+        <div class="weather">
+            <h2>Weather</h2>
+            <ul>
+                <li><img src="images/cloud_icon.svg" alt="Partly Cloudy Icon" id="icon"></li>
+                <li><strong>Temperature:</strong> 10 &deg; C</li>
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+                <li><strong>Wind:</strong> 5km/h</li>
+                <li id="windChill"></li>
+            </ul>
+        </div>
+    </main>
+</body>
+<footer>
+    <p id="year" onload="thisYear()"> | 👩🏼‍💻 Greice Moreira | Rio Grande do Sul, Brazil</p>
+    <p id="lastModification"> placeholder</p>
+</footer>
+
+</html>

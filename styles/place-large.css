@@ -1,0 +1,32 @@
+/* place max-width 640px */
+
+@media only screen and (min-width: 600px) { 
+
+    main {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2rem;
+        flex-direction: none;
+        align-items: none;
+    }
+    
+    .data, .weather {
+        position: absolute;
+        max-width: 300px;
+    }
+
+    .data {
+        position: absolute;
+        bottom: 470%;
+        left: 7%;
+    }
+    
+    .weather {
+        position: absolute;
+        bottom: 450%;
+        right: 7%;
+    }
+    
+}

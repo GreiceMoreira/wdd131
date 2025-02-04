@@ -1,4 +1,6 @@
-@media only screen and (min-width: 40em) {
+/* place max-width 640px */
+
+@media only screen and (min-width: 40em) { 
 	.navigation {
 		display: flex;
 	}
