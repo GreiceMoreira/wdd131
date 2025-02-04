@@ -36,6 +36,10 @@ h1 {
     font-size: 3rem;
 }
 
+h1::after{
+    content: "🧉";
+}
+
 .hero {
     position: relative;
     width: 100%;
