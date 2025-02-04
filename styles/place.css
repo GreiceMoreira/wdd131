@@ -5,6 +5,7 @@
     --blue: rgb(150, 221, 229);
     --orage: rgb(255, 139, 65);
     --pale:rgb(241, 241, 230);
+    --dark_green: #1C3824;
 }
 
 
@@ -19,7 +20,7 @@
 /* header  */
 header {
     background: var(--orage);
-    color: white;
+    color: var(--dark_green);
     display: block;
     text-align: center;
     padding: 1rem 0 1rem 0;
@@ -60,12 +61,11 @@ main {
 }
 ul {
     list-style-type: none;
-    display: flexbox;
+    display: flex;
 }
 
 #icon{
     background-color: var(--pale);
-    margin: px;
     float: right;
 } 
 

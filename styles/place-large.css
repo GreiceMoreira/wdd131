@@ -8,8 +8,6 @@
         justify-content: center;
         gap: 2rem;
         padding: 2rem;
-        flex-direction: none;
-        align-items: none;
     }
     
     .data, .weather {
