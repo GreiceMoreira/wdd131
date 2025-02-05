@@ -1,0 +1,22 @@
+main {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+@keyframes fadeFromBlack {
+    0% {
+        opacity: 0;
+        filter: brightness(0);
+    }
+    100% {
+        opacity: 1;
+        filter: brightness(1);
+    }
+}
+
+img {
+    animation: fadeFromBlack 10.8s ease-out forwards;
+}
+

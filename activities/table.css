@@ -1,0 +1,33 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+table {
+    margin: 10px;
+    border: 1px solid #777;
+    border-collapse: collapse;
+}
+
+caption {
+
+    padding: 10px;
+    caption-side: bottom;
+    color: #777;
+    font-size: .85rem;
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+tr:first-child th {
+    font-weight: bolder;
+    padding: 10px;
+}
+
+th, td {
+    padding: 7px 15px;
+    border: 1px solid #777;
+}
+
