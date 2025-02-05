@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1,minimum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Poetsen+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Temple Album</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Greice Moreira's BYU-Idaho - Home">
+    <meta name="author" content="Greice Moreira">
+
+    <script src="scripts/filtered-temples.js" defer></script>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+</head>
+
+<body onload="onLoad()">
+    <header>
+        <h1>Temple Album</h1>
+        <button aria-label="Menu" id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><button id="home">Home</button></li>
+                <li><button id="old">Old</button></li>
+                <li><button id="new">New</button></li>
+                <li><button id="large">Large</button></li>
+                <li><button id="small">Small</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="subTitle">Temples</h2>
+        <div class="figures" id="templesCards"></div>
+    </main>
+    <footer>
+        <p id="currentyear"></p>
+        <p id="lastModification"> placeholder</p>
+    </footer>
+</body>
+
+</html>
