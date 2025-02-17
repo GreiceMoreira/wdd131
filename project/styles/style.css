@@ -1,0 +1,47 @@
+:root {
+    --pale: #F8FFE5; /* Background */
+    --pink: #EF476F; /* Titles and Headers */
+    --turquoise: #2EC4B6; /* Paragraphs */
+    --green: #B5E48C; /* Details */
+    --yellow: #FFC43D; /* Details */
+}
+
+* {
+
+    margin: 20px;
+    padding: 0;
+    /* overflow: hidden; */
+
+}
+
+body {
+    background-color: var(--pale);
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h1 {
+    color: var(--pink);
+    font-family: "Rouge Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+
+}
+
+h2{
+    color: var(--pink);
+    font-family: "Rouge Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    border-bottom: 1px solid var(--green);
+}
+
+img {
+    max-width: 100vw; 
+    max-height: 100vh; 
+    object-fit: cover;
+    display: block; 
+}
