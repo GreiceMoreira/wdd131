@@ -42,6 +42,13 @@ const products = [
     }
 ];
 
+document.addEventListener("DOMContentLoaded", function() {
+    if (window.location.pathname.includes("form.html")) {
+        setProduct();
+    }
+});
+
+
 function setProduct() { 
     const productSelect = document.getElementById("product");
 
