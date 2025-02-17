@@ -6,10 +6,7 @@
     --black: #070001;
     --brown: rgb(104, 70, 43);
     --dark-green: #005151;
-    --red: #F9423A;
-    --yellow: #FFB81C;
     --white: #FBF9EE;
-    --dark: #000000;
 }
 
 * {
@@ -18,6 +15,9 @@
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
     box-sizing: border-box;
+    font-family: "Radley", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
