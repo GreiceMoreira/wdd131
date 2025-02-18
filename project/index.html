@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/Yarn.svg"> <!-- 17x17 pixels -->
     <title>Granny Square</title>
-    <meta name="description" content="Homepage od Granny Square Club">
+    <meta name="description" content="Homepage of Granny Square Club">
     <meta name="author" content="Greice Moreira">
 
         
@@ -60,13 +60,13 @@
                     <img src="images/granny_colors.webp" alt="Colorful granny squares"  loading="lazy">
                 </picture>
                 <p>
-                    The <strong>Square Club</strong>  is a warm and welcoming online space where crochet lovers of all levels come together to learn, share, and create. Whether you're just picking up a crochet hook for the first time or you're looking to refine your skills, this community is for you!
+                    The <strong>Granny Square Club</strong>  is a warm and welcoming online space where crochet lovers of all levels come together to learn, share, and create. Whether you're just picking up a crochet hook for the first time or you're looking to refine your skills, this community is for you!
                 </p>
             </section>
             <section class="grid-area two">
                 <h2>Learn with Kelly Franceschetti</h2>                
                 <p>
-                    Led by experienced crochet instructor <strong>Kelly Franceschetti</strong>, our lessons cover everything from beginner stitches to advanced techniques. Through interactive tutorials, live workshops, and an encouraging group environment, you'll gain confidence in your crochet skills and create stunning granny squares along the way.
+                    Led by experienced crochet instructor <strong>Kelly Franceschetti</strong>, our lessons cover everything from beginner stitches to advanced techniques.Through interactive tutorials, live workshops, and an encouraging group environment, you'll gain confidence in your crochet skills, and create stunning granny squares along the way.
                 </p>
                 <picture>
                     <img src="images/kf.webp" alt="Kelly Franceschetti teacher" loading="lazy">
@@ -103,14 +103,14 @@
             const currentTime = new Date().getTime();
 
             if (!lastVisit) {
-                visitMessage.textContent = "Welcome! Let us know if you have any questions.";
+                visitMessage.textContent = "Welcome! Feel free to reach out if you have any questions.";
             } else {
                 const lastVisitTime = parseInt(lastVisit, 10)
                 const timeDiff = currentTime - lastVisitTime;
                 const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
 
                 if (daysDiff < 1) {
-                    visitMessage.textContent = "Back so soon! Awesome!";
+                    visitMessage.textContent = "Back so soon! That's awesome!";
                 } else {
                     visitMessage.textContent = `You last visited ${daysDiff} day${daysDiff > 1 ? "s" : ""} ago.`;
                 }
