@@ -183,7 +183,7 @@ h2{
 
 /* buttons  */
 .cta {
-    color: var(--black);
+    color: var(--black) !important; 
     background-color: var(--yellow);
     padding: 1rem 3rem;
     box-shadow: 0 0 20px var(--white);
