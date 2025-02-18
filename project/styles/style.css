@@ -5,6 +5,7 @@
     --green: #B5E48C; /* Details */
     --yellow: #FFC43D; /* Details */
     --white: #fcfcfc;
+    --dark-pink : #d42a54;
 }
 
 * {
@@ -40,7 +41,7 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url(../images/hero.webp);
+    background-image: url(../images/hero-small.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -121,16 +122,21 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: var(--pink);
+    align-items: center;
     padding: 3em;
     margin-top: 15px;
     border-top: 1px solid var(--black);
     text-align: center;
+    flex-direction: column;
+    gap: 20px
+
 }
 
 .social-icons {
+    margin: 1rem;
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 70px;
 }
 
 
@@ -339,8 +345,9 @@ nav {
 .gsc label {
     display: block;
     padding-top: 1rem;
-    color: var(--pink);
-    font-size: 0.9rem;
+    color: var(--dark-pink);
+    font-size: 1.2rem;
+    margin-bottom: 1px;
 }
 
 .gsc input[type= text], 
