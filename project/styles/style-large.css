@@ -1,0 +1,58 @@
+@media only screen and (min-width: 40em) {
+
+	/* .hero-image {
+		background-image: url(../images/porto-alegre-hero.webp);
+	} */
+
+    .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; 
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+
+    .grid {
+        margin-left: 2rem;
+    }
+
+    .grid-area.one {
+        grid-template-areas: 
+        "head head head"
+        "picture p p"
+        "picture p p";
+        text-align: start;
+    }
+    
+    .grid-area.two {
+        grid-template-areas: 
+        "head head head"
+        "p p picture"
+        "p p picture";
+        text-align: end;
+    }
+    
+    /* .figures {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+	.membership-cards {
+		flex-direction: row;
+	}
+
+	.container {
+		width: 70%;
+	}
+	.discover-container {
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-areas: 
+				"item1 item2 item3 item4"
+				"item5 item6 item7 item8";
+	} */
+}
