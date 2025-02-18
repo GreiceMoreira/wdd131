@@ -245,6 +245,7 @@ nav {
     content: "X";
 }
 
+/* gallery  */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -281,3 +282,161 @@ nav {
 .gallery-grid h2 {
     margin-bottom: 4px;
 }
+
+/* form  */
+
+.form-grid-area {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 20px;
+    justify-content: space-around;
+}
+
+.form-grid-area img {
+    width: 100%;
+    max-width: 322px;
+    box-shadow: 5px 5px 15px var(--green);
+}
+
+.gsc fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--turquoise);
+    border-radius: 6px;
+    padding: 0.5rem 2%;
+}
+
+.gsc legend {
+    color: var(--turquoise);
+    padding: 0 .5rem;
+}
+
+.gsc label {
+    display: block;
+    padding-top: 1rem;
+    color: var(--pink);
+    font-size: 0.9rem;
+}
+
+.gsc div {
+    padding-top: 1rem;
+    color: blue;
+    font-size: .9rem;
+}
+
+.gsc input[type= text], 
+.gsc input[type= tel] , 
+.gsc input[type=email],
+.gsc select {
+    background-color: var(--pale-green);
+    display: block;
+    border: 1px solid 999;
+    border-radius: 5px;
+    padding: 0.75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.gsc input[type=submit] {
+    border: none;
+    background-image: linear-gradient(var(--pink), var(--yellow));
+    color: var(--pale-green);
+    border-radius: 8px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+    font-weight: 600;
+
+}
+
+.gsc input[type=submit]:hover {
+    font-weight: 700;
+    box-shadow: 1px 1px 4px var(--pink);
+}
+
+.gsc input:required {
+    border-left: 5px solid red;
+}
+
+.gsc input:required:valid {
+    border-left: 8px solid green;
+}
+
+/* membership-cards  */
+
+
+.membership-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.membership-cards .card {
+    background-color: var(--pale-green);
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 2px 10px var(--brown);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+
+}
+
+.membership-cards .card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.membership-cards button {
+    background-color: var(--yellow);
+    color: black;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.membership-cards button:hover {
+    background-color: var(--turquoise);
+} 
+
+dialog {
+    padding: 20px;
+    max-width: 400px;
+    margin: 10% auto;
+    border-radius: 8px;
+}
+
+dialog h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+dialog button ,
+.discover-card button {
+    background-color: var(--yellow);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: inline-end;
+    margin-top: 1rem;
+}
+
+dialog button:hover,
+.discover-card button:hover{
+    background-color: var(--turquoise);
+}
+
+
+

@@ -11,38 +11,42 @@
     <meta name="author" content="Greice Moreira">
 
 
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Rouge+Script&display=swap" rel="stylesheet">
-    
-    
-        <script src="scripts/script.js"></script>
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/style.css">
-        
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Rouge+Script&display=swap"
+        rel="stylesheet">
+
+
+    <script src="scripts/script.js" defer></script>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-large.css">
+
 </head>
 
 <body>
     <header>
         <div class="container">
-            <img src="./images/Frame 20.png" alt="Kelly Franceschetti">
+            <img src="./images/logo.jpeg" alt="Kelly Franceschetti">
         </div>
         <button id="menu" aria-label="Menu button"></button>
 
         <nav>
             <ul class="navigation">
-                <li><a href="#">Home</a></li>
+                <li><a href="https://greicemoreira.github.io/wdd131/project/">Home</a></li>
                 <li><a href="https://greicemoreira.github.io/wdd131/project/gallery.html">Gallery</a></li>
                 <li><a href="https://greicemoreira.github.io/wdd131/project/form.html">Inscription</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="form-grid-area">
         <h1 id="join-title">Be part of your club</h1>
-
-        <form action="thankyou.html" method="get">
+        <picture>
+            <img src="images/granny_navy.jpeg" alt="">
+        </picture>
+        <form action="thankyou.html" method="get" class="gsc">
             <fieldset>
                 <!-- first name  -->
                 <label for="first-name">First Name: </label>
@@ -61,7 +65,7 @@
 
                 <!-- phone number  -->
                 <label for="phone">Phone number: </label>
-                <input type="tel" id="phone" name="phone" 
+                <input type="tel" id="phone" name="phone"
                     title="Enter a valid phone number with only digits (8-15 characters)" autocomplete="tel"
                     pattern="[0-9]{8,15}">
 
@@ -84,27 +88,28 @@
             <input type="submit" value="Submit Application">
 
         </form>
+
+
         <div class="membership-cards">
             <div class="card" id="child" onclick="showMembershipInfo('child')">
-                <h3>Child</h3>
+                <h3>Child Level</h3>
                 <button>More Info</button>
             </div>
             <div class="card" id="adult" onclick="showMembershipInfo('adult')">
-                <h3>Bronze Membership</h3>
+                <h3>Adult Level</h3>
                 <button>More Info</button>
             </div>
             <div class="card" id="granny" onclick="showMembershipInfo('granny')">
-                <h3>Silver Membership</h3>
+                <h3>Granny Level</h3>
                 <button>More Info</button>
             </div>
         </div>
-        
+
         <dialog id="membershipModal">
-            <h2>Membership Benefits</h2>
+            <h2 id="membershipTitle"></h2>
             <p id="membershipDescription"></p>
             <button onclick="document.getElementById('membershipModal').close()">Close</button>
         </dialog>
-
     </main>
 
     <footer>
