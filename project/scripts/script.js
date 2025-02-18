@@ -93,4 +93,18 @@ function showMembershipInfo(membershipId) {
     }
 }
 
+// footer 
 
+// Last modification and current Year 
+
+function thisYear() {
+    const d = new Date();
+    document.getElementById("currentyear").innerHTML = "&copy;" + d.getFullYear() + " | 👩🏼‍💻 Greice Moreira | Rio Grande do Sul, Brazil"
+}
+function lastModification() {
+    const lastModified = new Date(document.lastModified);
+    document.getElementById("lastModification").textContent = `Last modification: ${lastModified.toLocaleString()}`;
+}
+
+thisYear();
+lastModification();

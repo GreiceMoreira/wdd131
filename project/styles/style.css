@@ -118,11 +118,24 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: var(--pink);
-    padding: 1em;
+    padding: 3em;
     margin-top: 15px;
     border-top: 1px solid var(--black);
     text-align: center;
 }
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+
+.social-icons img{
+    background: radial-gradient(circle , var(--white), var(--pink)) ;
+    border-radius: 15px;
+} 
+
 
 /* titles and text contents  */
 h1 {
@@ -158,14 +171,6 @@ h2{
     width: 80px;
     margin: 5.5px;
 }
-
-
-/* img {
-    max-width: 100vw; 
-    max-height: 100vh; 
-    object-fit: cover;
-    display: block; 
-} */
 
 /* buttons  */
 .cta {
@@ -286,18 +291,35 @@ nav {
 /* form  */
 
 .form-grid-area {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-areas: 
+        "title"
+        "picture"
+        "form"
+        "member";
     gap: 10px;
     margin: 10px 20px;
-    justify-content: space-around;
+    justify-content: center;
 }
+
 
 .form-grid-area img {
     width: 100%;
     max-width: 322px;
     box-shadow: 5px 5px 15px var(--green);
+    display: block;
+    margin: 0 auto;
 }
+
+.form-grid-area .membership-cards{
+    grid-area: member;
+} 
+
+.gsc {
+    max-width: 400px;
+    width: 100%;
+}
+
 
 .gsc fieldset {
     margin: 2rem 0;
@@ -318,12 +340,6 @@ nav {
     font-size: 0.9rem;
 }
 
-.gsc div {
-    padding-top: 1rem;
-    color: blue;
-    font-size: .9rem;
-}
-
 .gsc input[type= text], 
 .gsc input[type= tel] , 
 .gsc input[type=email],
@@ -334,8 +350,8 @@ nav {
     border-radius: 5px;
     padding: 0.75rem;
     color: #555;
-    width: 100%;
-    max-width: 400px;
+    width: 90%;
+    max-width: 100%;
     appearance: none;
 }
 
@@ -346,10 +362,12 @@ nav {
     border-radius: 8px;
     padding: .8rem;
     width: 96%;
-    max-width: 400px;
+    max-width: 100%;
     margin: -1rem 2% 2rem 2%;
     box-shadow: 1px 1px 4px #999;
     font-weight: 600;
+    text-align: center;
+    display: block;
 
 }
 

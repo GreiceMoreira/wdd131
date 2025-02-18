@@ -43,28 +43,35 @@
 		grid-template-areas: 
 			"title title title"
 			"picture form form"
-			"picture form form";
+			"picture form form"
+			"member member member";
 		gap: 10px;
 		margin: 10px 20px;
 		justify-content: space-around;
+		align-items: center;	
 	}
-	
+
+	.gsc input[type=submit],
+	.gsc input[type= text], 
+.gsc input[type= tel] , 
+.gsc input[type=email],
+.gsc select {
+	max-width: 400px;
+}
+
 	.form-grid-area picture {
 		grid-area: picture;
+		width: 100%;
+    height: auto;
 	}
 	
 	.form-grid-area h1 {
 		grid-area: title;
 	}
 	
-	.form-grid-area form {
+	.form-grid-area .gsc {
 		grid-area: form;
 	}
-
-
-.form-grid-area img {
-    margin-top: 3rem;
-}
 
 .membership-cards {
 	flex-direction: row;
