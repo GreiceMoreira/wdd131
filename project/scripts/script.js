@@ -12,13 +12,6 @@ hambutton.addEventListener('click', () => {
 });
 
 
-// "name": "Fary",
-// "creatDate": "23 December 1805",
-// "yearn": "Anne",
-// "hook": "3",
-// "level": 3,
-// "imageurl": "images/mandala.PNG"
-
 const url = "data/receips.json";
 const cards = document.querySelector('#cards');
 
