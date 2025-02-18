@@ -81,7 +81,11 @@
                     <option value="granny">Granny</option>
                 </select>
 
+                <!-- timestamp -->
+
+                <input type="hidden" id="timestamp" name="timestamp" value="">
             </fieldset>
+
 
             <!-- submit button  -->
 
@@ -114,11 +118,33 @@
 
     <footer>
         <div>
-            <p>&copy; Kelly Franceschetti.
-                <small>Devellop by: Greice Moreira</small>
-            </p>
+            <p>&copy; Kelly Franceschetti.</p>
         </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profekellyfranceschetti" target="_blank">
+                <img src="images/icons-facebook.svg" alt="Facebook" width="32">
+            </a>
+            <a href="https://www.instagram.com/kellyfranceschetti?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank">
+                <img src="images/icons-instagram.svg" alt="Instagram" width="32">
+            </a>
+            <a href="#" target="_blank">
+                <img src="images/icons-whatsapp.svg" alt="WhatsApp" width="32">
+            </a>
+        </div>
+        <div>
+            <p id="currentyear"></p>
+            <p id="lastModification"></p>
+        </div>
+
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const timestampField = document.getElementById("timestamp");
+            const now = new Date();
+            timestampField.value = now.toISOString();
+        });
+    </script>
 </body>
 
 </html>
