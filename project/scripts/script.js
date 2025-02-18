@@ -27,7 +27,6 @@ const displayCrochets = (crochets) => {
         let card = document.createElement('section');
         card.classList.toggle('own');
         let name = document.createElement('h2');
-        let creatDate = document.createElement('h3');
         let yearn = document.createElement('h4');
         let hook = document.createElement('h4');
         let level = document.createElement('h4');
@@ -35,8 +34,6 @@ const displayCrochets = (crochets) => {
 
 
         name.textContent = `${crochet.name} crochet`;
-
-        creatDate.textContent = `${crochet.creatDate}`;
         yearn.textContent = `Yean: ${crochet.yearn}`;
         hook.textContent = `Hook: ${crochet.hook}`;
         level.textContent = `Level: ${crochet.level}`;
@@ -49,7 +46,6 @@ const displayCrochets = (crochets) => {
         image.setAttribute('heigth', '440');
 
         card.appendChild(name)
-        card.appendChild(creatDate)
         card.appendChild(yearn)
         card.appendChild(hook)
         card.appendChild(level)
