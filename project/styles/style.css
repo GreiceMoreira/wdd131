@@ -349,7 +349,6 @@ nav {
 .gsc select {
     background-color: var(--pale-green);
     display: block;
-    border: 1px solid 999;
     border-radius: 5px;
     padding: 0.75rem;
     color: #555;
